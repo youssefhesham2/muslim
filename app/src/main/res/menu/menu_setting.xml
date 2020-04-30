@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/NotificationSetting"
+        android:title="Notification Setting"
+        android:icon="@drawable/azan"/>
+
+    <item
+        android:id="@+id/AzanTimesetting"
+        android:title="Calculation methods"
+        android:icon="@drawable/azkar"/>
+        android:icon="@drawable/quran"/>
+</menu>

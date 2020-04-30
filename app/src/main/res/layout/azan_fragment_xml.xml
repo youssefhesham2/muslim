@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="NamespaceTypo">
+   <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <View
+           android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+           android:layout_weight="1.2"
+        android:background="#1C2C3B"/>
+
+       <FrameLayout
+           android:id="@+id/fram"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:background="#F4F5F9">
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/Recycler3"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:padding="10dp"
+               />
+       </FrameLayout>
+
+   </LinearLayout>
+<ImageView
+    android:id="@+id/menue_button"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/menu"
+    android:layout_margin="15dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:id="@+id/themm"
+           android:layout_alignParentRight="true"
+           android:layout_width="200dp"
+           android:layout_height="200dp"
+           android:layout_margin="20dp">
+           <com.budiyev.android.circularprogressbar.CircularProgressBar
+               android:id="@+id/progress_bar"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               app:animateProgress="true"
+               app:backgroundStrokeColor="#fff"
+               app:backgroundStrokeWidth="2dp"
+               app:drawBackgroundStroke="false"
+               app:foregroundStrokeCap="butt"
+               app:foregroundStrokeColor="#1DFFB7"
+               app:foregroundStrokeWidth="3dp"
+               app:indeterminate="false"
+               app:indeterminateRotationAnimationDuration="1200"
+               app:indeterminateSweepAnimationDuration="600"
+               app:indeterminateMinimumAngle="45"
+               app:maximum="100"
+               app:progress="70"
+               app:progressAnimationDuration="100"
+               app:startAngle="270"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               android:orientation="vertical">
+               <TextView
+                   android:id="@+id/nextsala"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="#fff"
+                   android:text=""
+                   android:gravity="center"
+                   android:textSize="20sp"/>
+               <TextView
+                   android:id="@+id/time"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="#1DFFB7"
+                   android:text="4:49:00:AM"
+                   android:gravity="center"
+                   android:textSize="20sp"/>
+
+               <TextView
+                   android:id="@+id/timeleft"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="#fff"
+                   android:text=""
+                   android:gravity="center"
+                   android:textSize="20sp"/>
+           </LinearLayout>
+
+       </RelativeLayout>
+        <TextView
+            android:id="@+id/calumethodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text=""
+            android:maxLines="1"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp" />
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location" />
+            <TextView
+                android:id="@+id/cityname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:maxLines="1"
+                android:gravity="left"
+                android:layout_marginRight="16dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

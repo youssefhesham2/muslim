@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">muslim</string>
+    <string-array name="NotificationSetting">
+        <item>Enabled</item>
+        <item>Vibrate</item>
+        <item>Silent</item>
+    </string-array>
+    <string-array name="CalculationSetting">
+        <item>Automatically</item>
+        <item>Muslim World League(Europe, The Far East, Parts of the USA)</item>
+        <item>egyptian general authority of survey(africa,syria,iraq,etc)</item>
+        <item>university of islamic sciences,karachi(pakistan,etc)</item>
+        <item>Umm Al-Qura(The Arabian Peninsula)</item>
+        <item>isiamic society of north america(parts usa,canada,etc)</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

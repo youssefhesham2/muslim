@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/counter"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#18BC9C">
+
+    <TextView
+        android:id="@+id/counternumber"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="00"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/reloadcounter"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/reload" />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/bsmla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ"
+            android:textSize="20sp"
+            android:textColor="#FF8000"/>
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/zkr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أقُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ.ِ"
+            android:textSize="23sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/detils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:text="من قالها حين يصبح وحين يمسى كفته من كل شىء (الإخلاص والمعوذتين).ِ"
+            android:textSize="15sp"
+            android:textColor="#18BC9C"/>
+    </LinearLayout>
+</LinearLayout>

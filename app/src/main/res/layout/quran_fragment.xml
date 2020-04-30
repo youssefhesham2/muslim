@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/searchciew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layoutDirection="rtl"
+            />
+        <TextView
+            android:id="@+id/surah_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الفاتحه"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF8000"
+            android:background="#10000000"
+            android:gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler4"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>
